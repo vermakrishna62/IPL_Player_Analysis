@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_extras import stylable_container
+from streamlit_extras.stylable_container import stylable_container
 import pandas as pd
 
 st.set_page_config(page_title="IPL Player Detail", page_icon="🏏")
