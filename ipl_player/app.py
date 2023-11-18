@@ -166,7 +166,7 @@ dataframe = pd.read_csv("All-Time-Best-Batsman.csv")
 left_col, right_col = st.columns((2, 1))
 
 with left_col:
-    player_name = st.selectbox("Select Player", player_name_list)
+    player_name = st.selectbox("Type Player Name", player_name_list)
 
 player_data = ""
 flag = False
