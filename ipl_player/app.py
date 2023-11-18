@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_extras.stylable_container import stylable_container
 import pandas as pd
 
 st.set_page_config(page_title="IPL Player Detail", page_icon="🏏")
@@ -170,19 +169,11 @@ with left_col:
 player_data = ""
 flag = False
 with right_col:
-    with stylable_container(
-        key="sub_btn",
-        css_styles="""
-        button{
-            margin-top : 28px;
-        }
-        """,
-    ):
-        if st.button("Submit"):
-            player_data = dataframe[dataframe["Player"] == player_name]
-            player_data = player_data.drop(["POS"], axis="columns")
-            player_data.index.name = "Player Details"
-            flag = True
+    if st.button("Submit"):
+        player_data = dataframe[dataframe["Player"] == player_name]
+        player_data = player_data.drop(["POS"], axis="columns")
+        player_data.index.name = "Player Details"
+        flag = True
 
 if flag:
     st.write("---")
