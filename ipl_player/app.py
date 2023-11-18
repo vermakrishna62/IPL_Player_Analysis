@@ -14,7 +14,7 @@ with st.container():
 
     st.markdown(
         """
-        Connect with me on <b>LinkedIn</b> :link: &nbsp;&nbsp;&nbsp;[Click to view profile](https://www.linkedin.com/in/krishnakant-verma-a389a2245/)
+        Connect with me on <b>LinkedIn</b> :link: &nbsp;&nbsp;&nbsp;[Click here to view my profile](https://www.linkedin.com/in/krishnakant-verma-a389a2245/)
         """,
         unsafe_allow_html=True,
     )
